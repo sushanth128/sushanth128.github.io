@@ -4,7 +4,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white){: style="width: 120px;"}](https://www.linkedin.com/in/sushanth-gangireddy/)  [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white){: style="width: 120px;"}](https://github.com/sushanth128)  [![Tableau](/assets/imgs/tableau.png){: style="width: 120px;"}](https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes)
 
-[Projects](projects.md) | [Experience](experience.md)
+[//]: [Projects](projects.md) | [Experience](experience.md)
 
 ## 🔹 Education 𓆝 𓆟 𓆞
 
