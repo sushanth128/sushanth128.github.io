@@ -10,13 +10,15 @@ Here's a little bit about me (I will make this look more aesthetic soon):
 
 ## 🔹 Education 𓆝 𓆟 𓆞
 
-### ✰ Bachelor of Technology, Computer Science Engineering at Manipal Institute of Technology (2017 - 2021)
+### ✰ Manipal Institute of Technology
+### Bachelor of Technology, Computer Science Engineering (2017 - 2021)
 
 #### Minor Specialization in Intelligent Systems 
 
 Coursework: Machine Learning, Artificial Intelligence, Distributed Cloud Computing, Computer Vision, Natural Language Processing, Social Network Analysis, Operating Systems, Data Structures and Algorithms
 
-### ✰ Master of Information Systems Management at Carnegie Mellon University (2023 - 2024)
+### ✰ Carnegie Mellon University
+### Master of Information Systems Management (2023 - 2024)
 
 #### With a Focus in Business Intelligence and Data Analytics
 
