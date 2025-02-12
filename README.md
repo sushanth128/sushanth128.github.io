@@ -1,10 +1,9 @@
-# Sushanth Gangireddy 🐠 
+# Hi! 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼
 
 **` Machine Learning | Data Science | Art `**
 
-𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼
-
-Hi, I'm Sushanth!
+- [Projects](projects.md)
+- [Experience](experience.md)
 
 ## 🔹 Education 𓆝 𓆟 𓆞
 
