@@ -4,9 +4,7 @@
 
 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼
 
-Hi, I'm Sushanth! Welcome to my GitHub! 
-
-Here's a little bit about me (I will make this look more aesthetic soon):
+Hi, I'm Sushanth!
 
 ## 🔹 Education 𓆝 𓆟 𓆞
 
