@@ -152,7 +152,22 @@ This project involves developing, deploying, and monitoring a traffic prediction
 - Kubernetes  
 - Kubeflow Pipelines  
 - Evidently  
-- Flask  
+- Flask
+
+# Loan Lending Case Study  
+
+![Loan Lending](assets/imgs/loan.jpeg)  
+*Analyzing Loan Default Risks using Machine Learning*  
+
+[Code Repository](https://github.com/sushanth128/loan-lending-case-study)  
+
+This project explores loan data to identify key factors influencing loan defaults. We leverage machine learning models to predict loan repayment outcomes, enabling financial institutions to make data-driven lending decisions. The project includes data preprocessing, feature engineering, model training, evaluation, and deployment.  
+
+## Key Technologies  
+- **Machine Learning Models**: Logistic Regression, Random Forest, XGBoost  
+- **Deployment & Infrastructure**: Flask, Docker, Kubernetes  
+- **Data Processing & Storage**: SQL, Scikit-learn  
+- **Visualization**: Matplotlib, Seaborn  
 
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
