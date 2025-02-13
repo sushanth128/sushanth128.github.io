@@ -171,7 +171,9 @@ This project explores loan data to identify key factors influencing loan default
 
 # USD Exchange Rate Optimizer  
 
-![Currency Exchange](assets/imgs/usd-exchange.jpeg)  
+<p align="center">
+  <img src="assets/imgs/usd-exchange.jpeg" alt="Currency Exchange" width="750" height="300">
+</p>
 *Optimizing USD Exchange Rate Conversions using Machine Learning*  
 
 [Code Repository](https://github.com/sushanth128/usd-exchange-rate-optimizer)  
