@@ -111,7 +111,7 @@ This project focuses on improving the inference speed of Large Language Models (
 - Deep Learning Optimization  
 - AI Model Efficiency
 
-### Pennsylvania Elections Data Analysis
+### Pennsylvania Elections Analysis
 
 ![Pennsylvania Elections](https://github.com/sushanth128/assets/imgs/penn.png)  
 *Analyzing Election Trends with Tableau and SQL*
