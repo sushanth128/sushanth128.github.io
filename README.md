@@ -19,6 +19,7 @@
 </div>
 
 
+
 ## 🔹 Education 𓆝 𓆟 𓆞
 
 ### ✰ Manipal Institute of Technology
