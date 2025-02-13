@@ -94,6 +94,23 @@ Developed a road intelligence system to enhance traffic management and road safe
 - Keras  
 - Data Analytics
 
+### LLM Efficiency Enhancement: Speculative Decoding Model Generation
+
+![Speculative Decoding](/assets/imgs/grad_ai.jpeg)  
+*Accelerating Large Language Model Inference with Speculative Decoding*
+
+[Code Repository](https://github.com/sushanth128/LLM-Efficiency-Enhancement)
+
+This project focuses on improving the inference speed of Large Language Models (LLMs) by leveraging speculative decoding. We created a smaller draft model using traditional model compression techniques, such as pruning, quantization, and layer compression, to generate tokens faster. The target LLM then verifies these tokens in parallel, resulting in a significant speedup in the decoding process.
+
+**Key Technologies**:  
+- PyTorch
+- Large Language Models
+- Model Compression Techniques
+- Speculative Decoding  
+- Deep Learning Optimization  
+- AI Model Efficiency
+
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
 
