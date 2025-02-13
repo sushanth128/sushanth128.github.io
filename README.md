@@ -169,6 +169,22 @@ This project explores loan data to identify key factors influencing loan default
 - **Data Processing & Storage**: SQL, Scikit-learn  
 - **Visualization**: Matplotlib, Seaborn  
 
+# USD Exchange Rate Optimizer  
+
+![Currency Exchange](assets/imgs/usd-exchange.jpeg)  
+*Optimizing USD Exchange Rate Conversions using Machine Learning*  
+
+[Code Repository](https://github.com/sushanth128/usd-exchange-rate-optimizer)  
+
+## Project Overview  
+This project focuses on predicting and optimizing USD exchange rates using historical data and machine learning techniques. By analyzing past trends and market indicators, we aim to provide accurate exchange rate forecasts, helping users make informed currency exchange decisions. The system is deployed as a web service, enabling real-time exchange rate predictions.  
+
+## Key Technologies  
+- **Machine Learning Models**: Time Series Forecasting, LSTM, ARIMA  
+- **Deployment & Infrastructure**: Flask, Docker, Kubernetes  
+- **Data Processing & APIs**: Pandas, NumPy, Forex APIs  
+- **Visualization**: Matplotlib, Seaborn  
+
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
 
