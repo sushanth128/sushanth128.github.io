@@ -118,8 +118,6 @@ This project focuses on improving the inference speed of Large Language Models (
 
 [Code Repository](https://github.com/sushanth128/pennsylvania-election-outcomes)
 
-eregegv
-
 This project focuses on analyzing Pennsylvania's election data to uncover trends and insights related to voter demographics, election outcomes, and precinct performance. Using Tableau Desktop for data visualization and SQL for querying the dataset, we created interactive dashboards that provide a comprehensive view of voting patterns across different regions.
 
 **Key Technologies**:  
