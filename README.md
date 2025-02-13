@@ -50,7 +50,7 @@
   </nav>
 
   <div class="content">
-    <h1>Data Science Portfolio</h1>
+    <h3>Hi, I'm Sushanth!</h3>
 
     <p>
       I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. 
