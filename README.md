@@ -13,17 +13,18 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      background-color: #333;
+      background-color: white; /* Changed background color to white */
       padding: 8px 0; /* Reduced padding to make it slimmer */
+      border-bottom: 2px solid #ddd; /* Added subtle border for distinction */
     }
     .navbar a {
-      color: white;
+      color: #003366; /* Changed text color to dark blue */
       text-decoration: none;
       font-size: 16px; /* Slightly smaller font size */
       padding: 6px 12px;
     }
     .navbar a:hover {
-      background-color: #575757;
+      background-color: #f0f0f0; /* Lighter background on hover */
       border-radius: 5px;
     }
     .content {
