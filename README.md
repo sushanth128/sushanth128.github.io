@@ -1,6 +1,8 @@
-# Include a Navigation bar here - Home, Experience, Projects
+### !! Include a Navigation bar here - Home, Experience, Projects
 
-# Include a brief bio here
+### I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. At the heart of my work is a belief in the power of ### storytelling through data—seeing raw numbers weave a compelling story of their own. 
+
+### Take a look around, and feel free to reach out!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white){: style="width: 120px;"}](https://www.linkedin.com/in/sushanth-gangireddy/)  [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white){: style="width: 120px;"}](https://github.com/sushanth128)  [![Tableau](/assets/imgs/tableau.png){: style="width: 120px;"}](https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes)
 
