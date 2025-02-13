@@ -6,23 +6,30 @@
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
     .navbar {
       display: flex;
       justify-content: center;
       gap: 20px;
       background-color: #333;
-      padding: 10px;
+      padding: 8px 0; /* Reduced padding to make it slimmer */
     }
     .navbar a {
       color: white;
       text-decoration: none;
-      font-size: 18px;
-      padding: 8px 15px;
+      font-size: 16px; /* Slightly smaller font size */
+      padding: 6px 12px;
     }
     .navbar a:hover {
       background-color: #575757;
       border-radius: 5px;
+    }
+    .content {
+      text-align: center;
+      max-width: 600px;
+      margin: 40px auto 0; /* Added margin to create spacing below navbar */
     }
     .social-links {
       display: flex;
@@ -41,14 +48,16 @@
     <a href="projects.html">Projects</a>
   </nav>
 
-  <h1 style="text-align: center;">Data Science Portfolio</h1>
+  <div class="content">
+    <h1>Data Science Portfolio</h1>
 
-  <p style="text-align: center; max-width: 600px; margin: auto;">
-    I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. 
-    At the heart of my work is a belief in the power of storytelling through data—seeing raw numbers weave a compelling story of their own. 
-  </p>
+    <p>
+      I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. 
+      At the heart of my work is a belief in the power of storytelling through data—seeing raw numbers weave a compelling story of their own. 
+    </p>
 
-  <p style="text-align: center;">Take a look around, and feel free to reach out!</p>
+    <p>Take a look around, and feel free to reach out!</p>
+  </div>
 
   <div class="social-links">
     <a href="https://www.linkedin.com/in/sushanth-gangireddy/" target="_blank" rel="noopener noreferrer">
