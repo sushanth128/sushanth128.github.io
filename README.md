@@ -1,3 +1,5 @@
+### Data Science Portfolio
+
 ### !! Include a Navigation bar here - Home, Experience, Projects
 
 ### I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. At the heart of my work is a belief in the power of ### storytelling through data—seeing raw numbers weave a compelling story of their own. 
