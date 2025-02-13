@@ -1,13 +1,4 @@
 title: Sushanth Reddy Gangireddy
 theme: jekyll-theme-minimal
 description: Data Science & Machine Learning
-author:
-  name: Sushanth Reddy Gangireddy
-  avatar: /assets/images/sushanth.jpg
-  bio: Passionate about Data Science and Machine Learning
-  location: Dallas, TX
-  email: sushanthreddy08@gmail.com
-  social:
-    linkedin: "https://www.linkedin.com/in/sushanth-gangireddy/"
-    github: "https://github.com/sushanth128"
-    tableau: "https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes"
+logo: assets/imgs/sushanth.jpg
