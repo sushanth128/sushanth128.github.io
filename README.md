@@ -78,6 +78,20 @@ Writer, MTTN – Contributed articles covering technology, culture, and student 
 
 ## 🔹 Projects 𓆝 𓆟 𓆞
 
+### TCS Road Intelligence Project
+
+![Road Intelligence](/assets/imgs/tcs_roadintel.jpg)  
+*Leveraging AI for Smarter Roads*
+
+Developed a road intelligence system to enhance traffic management and road safety using AI-based image recognition and data analytics. The project involved detecting and analyzing traffic patterns, road conditions, and potential hazards to optimize real-time decision-making for transportation agencies.
+
+**Key Technologies**:  
+- TensorFlow  
+- OpenCV  
+- Python  
+- Keras  
+- Data Analytics
+
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
 
