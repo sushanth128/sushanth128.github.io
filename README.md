@@ -237,7 +237,6 @@ This project explores loan data to identify key factors influencing loan default
 
 [Code Repository](https://github.com/sushanth128/usd-exchange-rate-optimizer)  
 
-## Project Overview  
 This project focuses on predicting and optimizing USD exchange rates using historical data and machine learning techniques. By analyzing past trends and market indicators, we aim to provide accurate exchange rate forecasts, helping users make informed currency exchange decisions. The system is deployed as a web service, enabling real-time exchange rate predictions.  
 
 ## Key Technologies  
