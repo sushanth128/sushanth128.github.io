@@ -111,6 +111,21 @@ This project focuses on improving the inference speed of Large Language Models (
 - Deep Learning Optimization  
 - AI Model Efficiency
 
+### Pennsylvania Elections Data Analysis
+
+![Pennsylvania Elections](https://github.com/sushanth128/assets/imgs/penn.png)  
+*Analyzing Election Trends with Tableau and SQL*
+
+[Code Repository](https://github.com/sushanth128/pennsylvania-elections)
+
+This project focuses on analyzing Pennsylvania's election data to uncover trends and insights related to voter demographics, election outcomes, and precinct performance. Using Tableau Desktop for data visualization and SQL for querying the dataset, we created interactive dashboards that provide a comprehensive view of voting patterns across different regions.
+
+**Key Technologies**:  
+- Tableau Desktop  
+- SQL  
+- Data Visualization  
+- Data Analysis
+
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
 
