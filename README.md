@@ -125,6 +125,25 @@ This project focuses on analyzing Pennsylvania's election data to uncover trends
 - SQL  
 - Data Visualization  
 - Data Analysis
+  
+### Traffic Prediction Model
+
+![Traffic Prediction](/assets/imgs/metr-la.jpeg)  
+*Predicting Traffic Patterns using METR-LA Dataset*
+
+[Code Repository](https://github.com/sushanth128/traffic-prediction-system)
+
+This project involves developing, deploying, and monitoring a traffic prediction model using the METR-LA dataset. We train LSTM and GRU models to predict traffic patterns and deploy the model using Docker and Kubernetes. The model’s performance is then monitored using Evidently, ensuring its reliability in real-world scenarios.
+
+**Key Technologies**:  
+- LSTM  
+- GRU  
+- Docker  
+- Kubernetes  
+- Kubeflow Pipelines  
+- Evidently  
+- Flask  
+
 
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
