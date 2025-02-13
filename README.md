@@ -6,8 +6,17 @@
 
 ### Take a look around, and feel free to reach out!
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white){: style="width: 120px;"}](https://www.linkedin.com/in/sushanth-gangireddy/)  [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white){: style="width: 120px;"}](https://github.com/sushanth128)  [![Tableau](/assets/imgs/tableau.png){: style="width: 120px;"}](https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes)
-
+<div style="display: flex; gap: 15px; align-items: center;">
+  <a href="https://www.linkedin.com/in/sushanth-gangireddy/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" width="120">
+  </a>
+  <a href="https://github.com/sushanth128">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" width="120">
+  </a>
+  <a href="https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes">
+    <img src="/assets/imgs/tableau.png" width="120" style="vertical-align: middle;">
+  </a>
+</div>
 
 
 ## 🔹 Education 𓆝 𓆟 𓆞
