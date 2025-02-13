@@ -128,7 +128,7 @@ This project focuses on analyzing Pennsylvania's election data to uncover trends
   
 ### Traffic Prediction Model
 
-![Traffic Prediction](/assets/imgs/metr-la.jpeg)  
+<img width="750" src="/assets/imgs/metr-la.jpeg">
 *Predicting Traffic Patterns using METR-LA Dataset*
 
 [Code Repository](https://github.com/sushanth128/traffic-prediction-system)
@@ -143,8 +143,6 @@ This project involves developing, deploying, and monitoring a traffic prediction
 - Kubeflow Pipelines  
 - Evidently  
 - Flask  
-
-<img width="600" src="/assets/imgs/metr-la.jpeg">
 
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
