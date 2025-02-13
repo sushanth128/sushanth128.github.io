@@ -144,6 +144,7 @@ This project involves developing, deploying, and monitoring a traffic prediction
 - Evidently  
 - Flask  
 
+<img width="600" src="/assets/imgs/metr-la.jpeg">
 
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
