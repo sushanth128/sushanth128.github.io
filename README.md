@@ -1,23 +1,73 @@
-### Data Science Portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #333;
+      padding: 10px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 15px;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+    .social-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
-### !! Include a Navigation bar here - Home, Experience, Projects
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Projects</a>
+  </nav>
 
-### I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. At the heart of my work is a belief in the power of ### storytelling through data—seeing raw numbers weave a compelling story of their own. 
+  <h1 style="text-align: center;">Data Science Portfolio</h1>
 
-### Take a look around, and feel free to reach out!
+  <p style="text-align: center; max-width: 600px; margin: auto;">
+    I love exploring data, connecting the dots to uncover patterns, and building models that help achieve meaningful impact. 
+    At the heart of my work is a belief in the power of storytelling through data—seeing raw numbers weave a compelling story of their own. 
+  </p>
 
-<div style="display: flex; gap: 15px; align-items: center;">
-  <a href="https://www.linkedin.com/in/sushanth-gangireddy/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" width="120">
-  </a>
-  <a href="https://github.com/sushanth128">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" width="120">
-  </a>
-  <a href="https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes">
-    <img src="/assets/imgs/tableau.png" width="120" style="vertical-align: middle;">
-  </a>
-</div>
+  <p style="text-align: center;">Take a look around, and feel free to reach out!</p>
 
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/sushanth-gangireddy/" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" width="120">
+    </a>
+    <a href="https://github.com/sushanth128" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" width="120">
+    </a>
+    <a href="https://public.tableau.com/app/profile/sushanth.reddy.gangireddy/vizzes" target="_blank" rel="noopener noreferrer">
+      <img src="/assets/imgs/tableau.png" width="120" style="vertical-align: middle;">
+    </a>
+    <a href="mailto:sushanthreddy08@gmail.com">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" width="120">
+    </a>
+  </div>
+
+</body>
+</html>
 
 
 ## 🔹 Education 𓆝 𓆟 𓆞
@@ -190,6 +240,9 @@ This project focuses on predicting and optimizing USD exchange rates using histo
 
 ## 🔹 Volunteering 𓆝 𓆟 𓆞
 
+- Content Creator at Volunteer for India – Created engaging and informative content to support social initiatives.
+
+- PLUS Tutor at Carnegie Mellon University – Tutored middle school students in math, helping them build a strong foundation in the subject.
 
 
 <!---
