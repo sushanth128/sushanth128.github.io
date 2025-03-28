@@ -213,7 +213,7 @@ This project involves developing, deploying, and monitoring a traffic prediction
 - Evidently  
 - Flask
 
-# Loan Lending Case Study  
+### Loan Lending Case Study  
 
 ![Loan Lending](assets/imgs/loan.jpeg)  
 *Analyzing Loan Default Risks using Machine Learning*  
@@ -228,7 +228,7 @@ This project explores loan data to identify key factors influencing loan default
 - **Data Processing & Storage**: SQL, Scikit-learn  
 - **Visualization**: Matplotlib, Seaborn  
 
-# USD Exchange Rate Optimizer  
+### USD Exchange Rate Optimizer  
 
 <p align="center">
   <img src="assets/imgs/usd-exchange.jpeg" alt="Currency Exchange" width="750" height="300">
