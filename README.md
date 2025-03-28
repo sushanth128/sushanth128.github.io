@@ -134,7 +134,7 @@ Contribution and Reliability Award – Awarded at Quantiphi for the successful d
 
 #### 🌟 Leadership & Extracurriculars
 
-Member, Data Science Club | Carnegie Mellon University – Engaged in discussions, mentorship, and workshops focused on AI and machine learning advancements.
+Member, Data Science Club, Carnegie Mellon University – Engaged in discussions, mentorship, and workshops focused on AI and machine learning advancements.
 
 Social Media Head, Revels (Manipal's Annual Cultural Fest) – Led content strategy and execution, driving engagement for one of Manipal’s biggest cultural events.
 
