@@ -39,6 +39,12 @@
       justify-content: center;
       margin-top: 20px;
     }
+    .social-links img[alt*="tableau"],
+.social-links a[href*="tableau"] img {
+  border: 2px solid #000;
+  border-radius: 6px;
+  padding: 2px;
+}
   </style>
 </head>
 <body>
