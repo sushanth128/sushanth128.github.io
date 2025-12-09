@@ -8,9 +8,9 @@ title: Sushanth Reddy Gangireddy
 
 <div class="hero">
   <div class="hero-title">Sushanth Reddy Gangireddy</div>
-  ---
+  <div> </div>
   <div class="hero-subtitle">Applied ML and GenAI Engineer</div>
-  ---
+  <div> </div>
   <p class="hero-text">
     I build forecasting, optimization, and LLM systems that turn messy operational data into reliable decisions. 
     Recent work spans retail recommendation, demand forecasting, and LLM-powered analytics shipped into production.
