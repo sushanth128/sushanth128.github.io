@@ -5,11 +5,10 @@
 
 /* BASE */
 body {
-  margin: 0;
   font-family: Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #f2f2f4;   /* soft gray background */
-  color: #111;
-  line-height: 1.6;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  margin: 0;
 }
 
 /* LINKS */
@@ -306,11 +305,40 @@ a:hover {
   }
 }
 
+/* Primary titles */
 .hero-title,
-.section-title,
+.section-title {
+  color: #569cd6;  /* VS Code blue */
+}
+
+/* Card titles and roles */
 .project-name,
 .system-title,
 .experience-role {
-  color: #8b5cf6;  /* bright modern purple */
+  color: #c586c0;  /* VS Code purple */
 }
 
+/* Metadata */
+.hero-subtitle,
+.section-kicker,
+.project-meta,
+.experience-meta {
+  color: #9cdcfe;
+  opacity: 0.9;
+}
+
+/* Links */
+a {
+  color: #4fc1ff;
+}
+
+a:hover {
+  color: #9cdcfe;
+}
+
+
+.project-card,
+.system-card {
+  background: #252526;
+  border: 1px solid #2d2d2d;
+}
