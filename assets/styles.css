@@ -7,8 +7,8 @@
 body {
   margin: 0;
   font-family: Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: radial-gradient(circle at top, #171c3b 0, #050814 55%, #02030a 100%);
-  color: #f4f4f6;
+  background: #f2f2f4;   /* soft gray background */
+  color: #111;
   line-height: 1.6;
 }
 
@@ -305,3 +305,12 @@ a:hover {
     gap: 4px;
   }
 }
+
+.hero-title,
+.section-title,
+.project-name,
+.system-title,
+.experience-role {
+  color: #8b5cf6;  /* bright modern purple */
+}
+
