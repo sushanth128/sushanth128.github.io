@@ -40,12 +40,14 @@ a:hover {
 }
 
 .hero-photo {
-  width: 120px;
-  height: 120px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid rgba(255,255,255,0.15);
+  background: #111;
+  padding: 2px;
 }
+
 
 .hero-text-block {
   display: flex;
