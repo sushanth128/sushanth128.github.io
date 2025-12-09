@@ -8,20 +8,29 @@ title: Sushanth Reddy Gangireddy
 <div class="page">
 
 <div class="hero">
-  <div class="hero-title">Sushanth Reddy Gangireddy</div>
-  <div class="hero-divider"></div>
-  <div class="hero-subtitle">Applied ML and GenAI Engineer</div>
+
+  <div class="hero-top">
+    <img src="assets/imgs/sushanth.jpeg" class="hero-photo" />
+    <div class="hero-text-block">
+      <div class="hero-title">Sushanth Reddy Gangireddy</div>
+      <div class="hero-subtitle">Applied ML and GenAI Engineer</div>
+    </div>
+  </div>
+
   <p class="hero-text">
     I build forecasting, optimization, and LLM systems that turn messy operational data into reliable decisions. 
     Recent work spans retail recommendation, demand forecasting, and LLM-powered analytics shipped into production.
   </p>
+
   <div class="meta-links">
     <span class="meta-pill"><a href="https://www.linkedin.com/in/sushanth-gangireddy/">LinkedIn</a></span>
     <span class="meta-pill"><a href="https://github.com/sushanth128">GitHub</a></span>
     <span class="meta-pill"><a href="link-to-pdf-resume">Resume</a></span>
     <span class="meta-pill"><a href="mailto:sushanth.reddyg8@gmail.com">Email</a></span>
   </div>
+
 </div>
+
 
 
 <div class="section">
