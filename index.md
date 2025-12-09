@@ -3,7 +3,7 @@ layout: null
 title: Sushanth Reddy Gangireddy
 ---
 
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/styles.css">
 
 <div class="page">
 
