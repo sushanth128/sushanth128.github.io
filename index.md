@@ -1,4 +1,5 @@
 ---
+layout: null
 title: Sushanth Reddy Gangireddy
 ---
 
