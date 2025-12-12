@@ -48,19 +48,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 32px;
+  padding: 24px;
 }
 
-/* Outer shell */
+/* Outer shell: big, almost full screen */
 .editor-shell {
   display: flex;
-  width: 96vw;
-  max-width: 1200px;   /* fills most of the screen on desktop */
-  min-height: 80vh;    /* tall window */
+  width: 98vw;
+  max-width: 1400px;
+  min-height: 88vh;
   background: var(--bg-editor);
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.75);
   border: 1px solid #1f2937;
 }
 
@@ -109,6 +109,7 @@ body {
   padding: 3px 8px;
   border-radius: 4px;
   color: var(--text-muted);
+  cursor: pointer;
 }
 
 .file.active {
@@ -316,6 +317,8 @@ body {
   .editor-shell {
     flex-direction: column;
     min-height: 0;
+    width: 100vw;
+    border-radius: 0;
   }
 
   .sidebar {
@@ -350,12 +353,13 @@ body {
 
 @media (max-width: 640px) {
   .app-bg {
-    padding: 16px;
+    padding: 12px;
   }
 
   .editor-shell {
-    border-radius: 8px;
+    border-radius: 0;
     width: 100vw;
+    min-height: 100vh;
   }
 
   .line-numbers {
