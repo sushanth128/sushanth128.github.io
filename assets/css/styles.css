@@ -272,3 +272,48 @@ body {
     padding: 12px;
   }
 }
+
+/* Shrink overall frame */
+.editor-shell {
+  max-width: 880px;      /* was ~1120px */
+  min-height: 520px;     /* was 640px */
+  transform: scale(0.92);
+  transform-origin: top center;
+}
+
+/* Sidebar width reduction */
+:root {
+  --sidebar-width: 200px;   /* was 260px */
+}
+
+/* Reduce padding everywhere */
+.sidebar {
+  padding: 8px 8px;
+}
+
+.file {
+  padding: 2px 6px;
+}
+
+.tab {
+  padding: 4px 10px;
+}
+
+.code-area .code-block {
+  padding: 10px 12px;
+}
+
+.line-numbers {
+  padding: 10px 10px 10px 14px;
+}
+
+.status-bar {
+  padding: 3px 10px;
+  font-size: 10px;
+}
+
+/* Slight radius reduction */
+.editor-shell {
+  border-radius: 10px;
+}
+
