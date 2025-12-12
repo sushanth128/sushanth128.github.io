@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Sushanth's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Sushanth, focusing on data science, machine learning, and analytics." />
+  <meta name="description" content=" Portfolio of Sushanth, focusing on data science, machine learning, and analytics." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,13 +23,15 @@
         <div class="sidebar-section">
           <div class="sidebar-folder">
             <span class="chevron">▾</span>
-            <span class="folder-name">PORTFOLIO</span>
+            <span class="folder-name">SUSHANTH'S PORTFOLIO</span>
           </div>
           <ul class="file-list">
-            <li class="file active" data-tab="about">about.py</li>
-            <li class="file" data-tab="projects">projects.ipynb</li>
-            <li class="file" data-tab="skills">skills.json</li>
-            <li class="file" data-tab="contact">contact.md</li>
+            <li class="file active" data-tab="about">ABOUT.py</li>
+            <li class="file" data-tab="projects">PROJECTS.ipynb</li>
+            <li class="file" data-tab="skills">WORK-EXPERIENCE.py</li>
+            <li class="file" data-tab="skills">SKILLS.json</li>
+            <li class="file" data-tab="skills">CREATIVE-STUFF.py</li>
+            <li class="file" data-tab="contact">CONTACT.md</li>
           </ul>
         </div>
       </aside>
@@ -38,10 +40,12 @@
       <main class="editor">
         <!-- Tabs bar -->
         <div class="tab-bar">
-          <button class="tab active" data-tab="about">about.py</button>
-          <button class="tab" data-tab="projects">projects.ipynb</button>
-          <button class="tab" data-tab="skills">skills.json</button>
-          <button class="tab" data-tab="contact">contact.md</button>
+          <button class="tab active" data-tab="about">ABOUT.py</button>
+          <button class="tab" data-tab="projects">PROJECTS.ipynb</button>
+          <button class="tab" data-tab="projects">WORK-EXPERIENCE.ipynb</button>
+          <button class="tab" data-tab="skills">SKILLS.json</button>
+          <button class="tab" data-tab="skills">CREATIVE-STUFF.json</button>
+          <button class="tab" data-tab="contact">CONTACT.md</button>
         </div>
 
         <!-- ABOUT VIEW -->
@@ -81,31 +85,37 @@
             </div>
 
             <pre class="code-block"><code>
-<span class="kw">class</span> <span class="type">DataScientist</span>:
+<span class="kw">role</span> <span class="type"></span>:
 
     <span class="kw">def</span> <span class="fn">__init__</span>(<span class="self">self</span>):
-        <span class="self">self</span>.name = <span class="str">"Sushanth"</span>
+        <span class="self">self</span>.name = <span class="str">"Sushanth 𓆟"</span>
         <span class="self">self</span>.role = <span class="str">"Data Scientist &amp; ML Engineer"</span>
-        <span class="self">self</span>.location = <span class="str">"Pittsburgh, PA"</span>
-        <span class="self">self</span>.experience = <span class="num">5</span> <span class="comment"># years (industry + research)</span>
+        <span class="self">self</span>.location = <span class="str">"Brooklyn, New York, USA "</span>
+        <span class="self">self</span>.experience = <span class="num">3</span> <span class="comment"># years (industry + research)</span>
 
     <span class="kw">def</span> <span class="fn">get_bio</span>(<span class="self">self</span>) -&gt; <span class="type">str</span>:
         <span class="kw">return</span> <span class="str">"""
-Passionate about turning messy, high-dimensional data into clean,
-deployable machine learning systems that ship to production.
+      Hi, I’m Sushanth :)
 
-Experience spans predictive modeling, NLP, experiment design, and
-end-to-end ML pipelines from data ingestion to monitoring. I enjoy
-working at the intersection of engineering, product, and research.
+      I work at the intersection of data, AI systems, and decision-making. I enjoy taking messy, high-dimensional data and turning it into insights, models, and products that make an impact on the world out there.
+      
+      I’ve been working with computer science and machine learning since 2017, across applied ML, analytics, and experimentation. My experience spans building models, analyzing real-world data, and translating technical work into business and product impact. s are real, and the solution needs to scale beyond a notebook.
+
+      My portfolio (hopefully) showcases all the fun and cool stuff I've had the chance to work on over the years!
+
+      Feel free to look around and reach out, I'm always open to chat! 
+          
+      Have a nice day :)
 """</span>
 
     <span class="kw">def</span> <span class="fn">get_specializations</span>(<span class="self">self</span>) -&gt; <span class="type">List</span>[<span class="type">str</span>]:
 
         <span class="kw">return</span> [
             <span class="str">"Machine Learning &amp; Deep Learning"</span>,
-            <span class="str">"Natural Language Processing"</span>,
+            <span class="str">"Large Language Models"</span>,
             <span class="str">"Experimentation &amp; Causal Inference"</span>,
             <span class="str">"Time Series &amp; Forecasting"</span>,
+            <span class="str">"Computer Vision"</span>,
             <span class="str">"MLOps &amp; Model Deployment"</span>,
             <span class="str">"Data Storytelling &amp; Visualization"</span>
         ]
