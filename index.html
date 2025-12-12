@@ -38,48 +38,49 @@
       <main class="editor">
         <!-- Tabs bar -->
         <div class="tab-bar">
-          <div class="tab active">about.py</div>
-          <div class="tab">projects.ipynb</div>
-          <div class="tab">skills.json</div>
-          <div class="tab">contact.md</div>
+          <button class="tab active" data-tab="about">about.py</button>
+          <button class="tab" data-tab="projects">projects.ipynb</button>
+          <button class="tab" data-tab="skills">skills.json</button>
+          <button class="tab" data-tab="contact">contact.md</button>
         </div>
 
-        <!-- Code area -->
-        <div class="code-area">
-          <div class="line-numbers">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span>11</span>
-            <span>12</span>
-            <span>13</span>
-            <span>14</span>
-            <span>15</span>
-            <span>16</span>
-            <span>17</span>
-            <span>18</span>
-            <span>19</span>
-            <span>20</span>
-            <span>21</span>
-            <span>22</span>
-            <span>23</span>
-            <span>24</span>
-            <span>25</span>
-            <span>26</span>
-            <span>27</span>
-            <span>28</span>
-            <span>29</span>
-            <span>30</span>
-          </div>
+        <!-- ABOUT VIEW -->
+        <div class="editor-content active" data-tab="about">
+          <div class="code-area">
+            <div class="line-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span>11</span>
+              <span>12</span>
+              <span>13</span>
+              <span>14</span>
+              <span>15</span>
+              <span>16</span>
+              <span>17</span>
+              <span>18</span>
+              <span>19</span>
+              <span>20</span>
+              <span>21</span>
+              <span>22</span>
+              <span>23</span>
+              <span>24</span>
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+              <span>29</span>
+              <span>30</span>
+            </div>
 
-          <pre class="code-block"><code>
+            <pre class="code-block"><code>
 <span class="kw">class</span> <span class="type">DataScientist</span>:
 
     <span class="kw">def</span> <span class="fn">__init__</span>(<span class="self">self</span>):
@@ -109,80 +110,94 @@ working at the intersection of engineering, product, and research.
             <span class="str">"Data Storytelling &amp; Visualization"</span>
         ]
 </code></pre>
+          </div>
         </div>
 
-        <!-- Projects section -->
-        <section class="projects">
-          <h1>Featured Projects</h1>
+        <!-- PROJECTS VIEW -->
+        <div class="editor-content" data-tab="projects">
+          <div class="projects-pane">
+            <section class="projects">
+              <h1>Featured Projects</h1>
 
-          <div class="project-card">
-            <h2>Customer Churn Prediction</h2>
-            <p>
-              Built an ensemble model achieving 94% accuracy in predicting customer churn,
-              helping reduce attrition by 23%.
-            </p>
+              <div class="project-card">
+                <h2>Customer Churn Prediction</h2>
+                <p>
+                  Built an ensemble model achieving 94% accuracy in predicting customer churn,
+                  helping reduce attrition by 23%.
+                </p>
 
-            <div class="tags">
-              <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
-            </div>
+                <div class="tags">
+                  <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
+                </div>
 
-            <div class="metrics">
-              <span># accuracy: 94%</span>
-              <span># impact: 23% reduction in churn</span>
-            </div>
+                <div class="metrics">
+                  <span># accuracy: 94%</span>
+                  <span># impact: 23% reduction in churn</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h2>Real-Time Sentiment Analysis</h2>
+                <p>
+                  Developed a streaming NLP pipeline processing 10K+ social media posts per
+                  minute with sentiment classification.
+                </p>
+
+                <div class="tags">
+                  <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
+                </div>
+
+                <div class="metrics">
+                  <span># throughput: 10K posts/min</span>
+                  <span># latency: &lt; 100ms</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h2>Image Classification System</h2>
+                <p>
+                  Trained a CNN model for product categorization with 98% accuracy, deployed
+                  as a REST API serving 1M+ requests daily.
+                </p>
+
+                <div class="tags">
+                  <span>TensorFlow</span><span>Keras</span><span>FastAPI</span><span>GCP</span>
+                </div>
+
+                <div class="metrics">
+                  <span># accuracy: 98%</span>
+                  <span># requests: 1M+/day</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h2>Recommendation Engine</h2>
+                <p>
+                  Implemented collaborative filtering and deep learning hybrid model,
+                  increasing user engagement by 35%.
+                </p>
+
+                <div class="tags">
+                  <span>Surprise</span><span>PyTorch</span><span>Redis</span><span>PostgreSQL</span>
+                </div>
+
+                <div class="metrics">
+                  <span># engagement: +35%</span>
+                  <span># ctr: +28%</span>
+                </div>
+              </div>
+            </section>
           </div>
+        </div>
 
-          <div class="project-card">
-            <h2>Real-Time Sentiment Analysis</h2>
-            <p>
-              Developed a streaming NLP pipeline processing 10K+ social media posts per
-              minute with sentiment classification.
-            </p>
+        <!-- Placeholder views for skills / contact (optional, can fill later) -->
+        <div class="editor-content" data-tab="skills">
+          <!-- future skills content -->
+        </div>
 
-            <div class="tags">
-              <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
-            </div>
-
-            <div class="metrics">
-              <span># throughput: 10K posts/min</span>
-              <span># latency: &lt; 100ms</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h2>Image Classification System</h2>
-            <p>
-              Trained a CNN model for product categorization with 98% accuracy, deployed
-              as a REST API serving 1M+ requests daily.
-            </p>
-
-            <div class="tags">
-              <span>TensorFlow</span><span>Keras</span><span>FastAPI</span><span>GCP</span>
-            </div>
-
-            <div class="metrics">
-              <span># accuracy: 98%</span>
-              <span># requests: 1M+/day</span>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h2>Recommendation Engine</h2>
-            <p>
-              Implemented collaborative filtering and deep learning hybrid model,
-              increasing user engagement by 35%.
-            </p>
-
-            <div class="tags">
-              <span>Surprise</span><span>PyTorch</span><span>Redis</span><span>PostgreSQL</span>
-            </div>
-
-            <div class="metrics">
-              <span># engagement: +35%</span>
-              <span># ctr: +28%</span>
-            </div>
-          </div>
-        </section>
+        <div class="editor-content" data-tab="contact">
+          <!-- future contact content -->
+        </div>
 
         <!-- Status bar -->
         <footer class="status-bar">
@@ -192,5 +207,25 @@ working at the intersection of engineering, product, and research.
       </main>
     </div>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('.tab');
+      const views = document.querySelectorAll('.editor-content');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+
+          tabs.forEach(t => t.classList.remove('active'));
+          views.forEach(v => v.classList.remove('active'));
+
+          tab.classList.add('active');
+          const view = document.querySelector('.editor-content[data-tab="' + target + '"]');
+          if (view) view.classList.add('active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
