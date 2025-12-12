@@ -115,80 +115,178 @@ working at the intersection of engineering, product, and research.
 
         <!-- PROJECTS VIEW -->
         <div class="editor-content" data-tab="projects">
-          <div class="projects-pane">
-            <section class="projects">
-              <h1>Featured Projects</h1>
+  <div class="projects-pane">
+    <section class="projects">
+      <h1>Featured Projects</h1>
 
-              <div class="project-card">
-                <h2>Customer Churn Prediction</h2>
-                <p>
-                  Built an ensemble model achieving 94% accuracy in predicting customer churn,
-                  helping reduce attrition by 23%.
-                </p>
+      <div class="project-card">
+        <h2>Customer Churn Prediction</h2>
+        <p>
+          Built an ensemble model achieving 94% accuracy in predicting customer churn,
+          helping reduce attrition by 23%.
+        </p>
 
-                <div class="tags">
-                  <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
-                </div>
-
-                <div class="metrics">
-                  <span># accuracy: 94%</span>
-                  <span># impact: 23% reduction in churn</span>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <h2>Real-Time Sentiment Analysis</h2>
-                <p>
-                  Developed a streaming NLP pipeline processing 10K+ social media posts per
-                  minute with sentiment classification.
-                </p>
-
-                <div class="tags">
-                  <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
-                </div>
-
-                <div class="metrics">
-                  <span># throughput: 10K posts/min</span>
-                  <span># latency: &lt; 100ms</span>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <h2>Image Classification System</h2>
-                <p>
-                  Trained a CNN model for product categorization with 98% accuracy, deployed
-                  as a REST API serving 1M+ requests daily.
-                </p>
-
-                <div class="tags">
-                  <span>TensorFlow</span><span>Keras</span><span>FastAPI</span><span>GCP</span>
-                </div>
-
-                <div class="metrics">
-                  <span># accuracy: 98%</span>
-                  <span># requests: 1M+/day</span>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <h2>Recommendation Engine</h2>
-                <p>
-                  Implemented collaborative filtering and deep learning hybrid model,
-                  increasing user engagement by 35%.
-                </p>
-
-                <div class="tags">
-                  <span>Surprise</span><span>PyTorch</span><span>Redis</span><span>PostgreSQL</span>
-                </div>
-
-                <div class="metrics">
-                  <span># engagement: +35%</span>
-                  <span># ctr: +28%</span>
-                </div>
-              </div>
-            </section>
-          </div>
+        <div class="tags">
+          <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
         </div>
+
+        <div class="metrics">
+          <span># accuracy: 94%</span>
+          <span># impact: 23% reduction in churn</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://example.com/churn-case-study" class="btn-secondary" target="_blank" rel="noreferrer">
+            Read more…
+          </a>
+          <a href="https://github.com/yourusername/churn-project" class="btn-icon" aria-label="View on GitHub" target="_blank" rel="noreferrer">
+            <!-- Simple GitHub mark -->
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+              6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94
+              -.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+              -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+              1.87.87 2.33.66.07-.52.28-.87.51-1.07
+              -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+              1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+              3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 
+              2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8
+              c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Real-Time Sentiment Analysis</h2>
+        <p>
+          Developed a streaming NLP pipeline processing 10K+ social media posts per
+          minute with sentiment classification.
+        </p>
+
+        <div class="tags">
+          <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
+        </div>
+
+        <div class="metrics">
+          <span># throughput: 10K posts/min</span>
+          <span># latency: &lt; 100ms</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://example.com/sentiment-case-study" class="btn-secondary" target="_blank" rel="noreferrer">
+            Read more…
+          </a>
+          <a href="https://github.com/yourusername/sentiment-streaming" class="btn-icon" aria-label="View on GitHub" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+              6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94
+              -.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+              -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+              1.87.87 2.33.66.07-.52.28-.87.51-1.07
+              -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+              1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+              3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 
+              2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8
+              c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Image Classification System</h2>
+        <p>
+          Trained a CNN model for product categorization with 98% accuracy, deployed
+          as a REST API serving 1M+ requests daily.
+        </p>
+
+        <div class="tags">
+          <span>TensorFlow</span><span>Keras</span><span>FastAPI</span><span>GCP</span>
+        </div>
+
+        <div class="metrics">
+          <span># accuracy: 98%</span>
+          <span># requests: 1M+/day</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://example.com/image-classification" class="btn-secondary" target="_blank" rel="noreferrer">
+            Read more…
+          </a>
+          <a href="https://github.com/yourusername/image-classification" class="btn-icon" aria-label="View on GitHub" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+              6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94
+              -.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+              -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+              1.87.87 2.33.66.07-.52.28-.87.51-1.07
+              -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+              1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+              3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 
+              2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8
+              c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Recommendation Engine</h2>
+        <p>
+          Implemented collaborative filtering and deep learning hybrid model,
+          increasing user engagement by 35%.
+        </p>
+
+        <div class="tags">
+          <span>Surprise</span><span>PyTorch</span><span>Redis</span><span>PostgreSQL</span>
+        </div>
+
+        <div class="metrics">
+          <span># engagement: +35%</span>
+          <span># ctr: +28%</span>
+        </div>
+
+        <div class="project-actions">
+          <a href="https://example.com/recsys" class="btn-secondary" target="_blank" rel="noreferrer">
+            Read more…
+          </a>
+          <a href="https://github.com/yourusername/recsys-hybrid" class="btn-icon" aria-label="View on GitHub" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+              6.53 5.47 7.59.4.07.55-.17.55-.38
+              0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94
+              -.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+              -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 
+              1.87.87 2.33.66.07-.52.28-.87.51-1.07
+              -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+              -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82
+              .64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+              1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12
+              .51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+              3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 
+              2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8
+              c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
 
         <!-- Placeholder views for skills / contact (optional, can fill later) -->
         <div class="editor-content" data-tab="skills">
