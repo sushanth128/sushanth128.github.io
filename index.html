@@ -26,10 +26,10 @@
             <span class="folder-name">PORTFOLIO</span>
           </div>
           <ul class="file-list">
-            <li class="file active">about.py</li>
-            <li class="file">projects.ipynb</li>
-            <li class="file">skills.json</li>
-            <li class="file">contact.md</li>
+            <li class="file active" data-tab="about">about.py</li>
+            <li class="file" data-tab="projects">projects.ipynb</li>
+            <li class="file" data-tab="skills">skills.json</li>
+            <li class="file" data-tab="contact">contact.md</li>
           </ul>
         </div>
       </aside>
@@ -209,23 +209,27 @@ working at the intersection of engineering, product, and research.
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const tabs = document.querySelectorAll('.tab');
-      const views = document.querySelectorAll('.editor-content');
+document.addEventListener("DOMContentLoaded", () => {
+  const topTabs = document.querySelectorAll(".tab-bar .tab");
+  const sideTabs = document.querySelectorAll(".file-list .file");
+  const views = document.querySelectorAll(".editor-content");
 
-      tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          const target = tab.dataset.tab;
+  function activate(target) {
+    // top tab highlight
+    topTabs.forEach(t => t.classList.toggle("active", t.dataset.tab === target));
 
-          tabs.forEach(t => t.classList.remove('active'));
-          views.forEach(v => v.classList.remove('active'));
+    // sidebar highlight
+    sideTabs.forEach(s => s.classList.toggle("active", s.dataset.tab === target));
 
-          tab.classList.add('active');
-          const view = document.querySelector('.editor-content[data-tab="' + target + '"]');
-          if (view) view.classList.add('active');
-        });
-      });
-    });
-  </script>
+    // view switching
+    views.forEach(v => v.classList.toggle("active", v.dataset.tab === target));
+  }
+
+  [...topTabs, ...sideTabs].forEach(tab => {
+    tab.addEventListener("click", () => activate(tab.dataset.tab));
+  });
+});
+</script>
+
 </body>
 </html>
