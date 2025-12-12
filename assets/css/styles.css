@@ -1,0 +1,274 @@
+:root {
+  --bg-page: #020617;
+  --bg-editor: #1e1e1e;
+  --bg-sidebar: #111827;
+  --bg-tab-active: #252526;
+  --bg-tab-inactive: #1e1e1e;
+  --bg-status: #0f172a;
+
+  --border-subtle: #374151;
+  --text-primary: #e5e7eb;
+  --text-muted: #9ca3af;
+  --accent: #3b82f6;
+
+  --code-kw: #569cd6;
+  --code-type: #4ec9b0;
+  --code-fn: #dcdcaa;
+  --code-self: #9cdcfe;
+  --code-str: #ce9178;
+  --code-num: #b5cea8;
+  --code-comment: #6a9955;
+
+  --sidebar-width: 260px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #111827 0, #020617 55%, #000 100%);
+  color: var(--text-primary);
+}
+
+/* Center the fake editor window */
+.app-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Outer shell */
+.editor-shell {
+  display: flex;
+  max-width: 1120px;
+  width: 100%;
+  min-height: 640px;
+  background: var(--bg-editor);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7);
+  border: 1px solid #1f2937;
+}
+
+/* Sidebar */
+.sidebar {
+  width: var(--sidebar-width);
+  background: var(--bg-sidebar);
+  padding: 12px 10px;
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.sidebar-title {
+  letter-spacing: 0.08em;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 4px 6px;
+}
+
+.sidebar-section {
+  margin-top: 6px;
+}
+
+.sidebar-folder {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.chevron {
+  font-size: 11px;
+}
+
+.file-list {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+.file {
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: var(--text-muted);
+}
+
+.file.active {
+  background: #1f2937;
+  color: var(--text-primary);
+}
+
+/* Main editor */
+.editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs */
+.tab-bar {
+  display: flex;
+  background: #18181b;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 12px;
+}
+
+.tab {
+  padding: 6px 14px;
+  border-right: 1px solid #27272f;
+  background: var(--bg-tab-inactive);
+  color: var(--text-muted);
+}
+
+.tab.active {
+  background: var(--bg-tab-active);
+  color: var(--text-primary);
+}
+
+/* Code area */
+.code-area {
+  flex: 1;
+  display: flex;
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* Line numbers */
+.line-numbers {
+  padding: 14px 12px 14px 16px;
+  background: #18181b;
+  border-right: 1px solid #27272f;
+  color: #6b7280;
+  text-align: right;
+  user-select: none;
+}
+
+.line-numbers span {
+  display: block;
+  height: 1.5em;
+}
+
+/* Code block */
+.code-block {
+  margin: 0;
+  padding: 14px 16px;
+  white-space: pre;
+  overflow: auto;
+}
+
+/* Syntax highlighting */
+.code-block .kw {
+  color: var(--code-kw);
+}
+
+.code-block .type {
+  color: var(--code-type);
+}
+
+.code-block .fn {
+  color: var(--code-fn);
+}
+
+.code-block .self {
+  color: var(--code-self);
+}
+
+.code-block .str {
+  color: var(--code-str);
+}
+
+.code-block .num {
+  color: var(--code-num);
+}
+
+.code-block .comment {
+  color: var(--code-comment);
+}
+
+/* Status bar */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 12px;
+  background: var(--bg-status);
+  border-top: 1px solid #1f2937;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.status-right {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .editor-shell {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebar-section {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .file-list {
+    display: flex;
+    gap: 4px;
+    margin-left: 10px;
+  }
+
+  .file {
+    padding-inline: 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-bg {
+    padding: 12px;
+  }
+
+  .editor-shell {
+    border-radius: 8px;
+  }
+
+  .line-numbers {
+    display: none;
+  }
+
+  .code-block {
+    padding: 12px;
+  }
+}
