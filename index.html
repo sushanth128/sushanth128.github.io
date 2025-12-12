@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Data Scientist Portfolio</title>
+  <title>Sushanth's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of a data scientist specializing in machine learning, NLP, and analytics." />
+  <meta name="description" content="Portfolio of Sushanth, focusing on data science, machine learning, and analytics." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -83,20 +83,19 @@
 <span class="kw">class</span> <span class="type">DataScientist</span>:
 
     <span class="kw">def</span> <span class="fn">__init__</span>(<span class="self">self</span>):
-        <span class="self">self</span>.name = <span class="str">"Alex Morgan"</span>
-        <span class="self">self</span>.role = <span class="str">"Senior Data Scientist"</span>
-        <span class="self">self</span>.location = <span class="str">"San Francisco, CA"</span>
-        <span class="self">self</span>.experience = <span class="num">5</span> <span class="comment"># years</span>
+        <span class="self">self</span>.name = <span class="str">"Sushanth"</span>
+        <span class="self">self</span>.role = <span class="str">"Data Scientist &amp; ML Engineer"</span>
+        <span class="self">self</span>.location = <span class="str">"Pittsburgh, PA"</span>
+        <span class="self">self</span>.experience = <span class="num">5</span> <span class="comment"># years (industry + research)</span>
 
     <span class="kw">def</span> <span class="fn">get_bio</span>(<span class="self">self</span>) -&gt; <span class="type">str</span>:
         <span class="kw">return</span> <span class="str">"""
-Passionate data scientist specializing in machine learning,
-deep learning, and statistical modeling. I transform complex
-data into actionable insights that drive business decisions.
+Passionate about turning messy, high-dimensional data into clean,
+deployable machine learning systems that ship to production.
 
-My expertise spans across predictive analytics, NLP, computer
-vision, and building end-to-end ML pipelines. I thrive on
-solving challenging problems with elegant solutions.
+Experience spans predictive modeling, NLP, experiment design, and
+end-to-end ML pipelines from data ingestion to monitoring. I enjoy
+working at the intersection of engineering, product, and research.
 """</span>
 
     <span class="kw">def</span> <span class="fn">get_specializations</span>(<span class="self">self</span>) -&gt; <span class="type">List</span>[<span class="type">str</span>]:
@@ -104,91 +103,91 @@ solving challenging problems with elegant solutions.
         <span class="kw">return</span> [
             <span class="str">"Machine Learning &amp; Deep Learning"</span>,
             <span class="str">"Natural Language Processing"</span>,
-            <span class="str">"Computer Vision"</span>,
-            <span class="str">"Time Series Analysis"</span>,
-            <span class="str">"A/B Testing &amp; Experimentation"</span>,
-            <span class="str">"MLOps &amp; Model Deployment"</span>
+            <span class="str">"Experimentation &amp; Causal Inference"</span>,
+            <span class="str">"Time Series &amp; Forecasting"</span>,
+            <span class="str">"MLOps &amp; Model Deployment"</span>,
+            <span class="str">"Data Storytelling &amp; Visualization"</span>
         ]
 </code></pre>
         </div>
 
+        <!-- Projects section -->
         <section class="projects">
-  <h1>Featured Projects</h1>
+          <h1>Featured Projects</h1>
 
-  <div class="project-card">
-    <h2>Customer Churn Prediction</h2>
-    <p>
-      Built an ensemble model achieving 94% accuracy in predicting customer churn,
-      helping reduce attrition by 23%.
-    </p>
+          <div class="project-card">
+            <h2>Customer Churn Prediction</h2>
+            <p>
+              Built an ensemble model achieving 94% accuracy in predicting customer churn,
+              helping reduce attrition by 23%.
+            </p>
 
-    <div class="tags">
-      <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
-    </div>
+            <div class="tags">
+              <span>Python</span><span>XGBoost</span><span>SHAP</span><span>AWS SageMaker</span>
+            </div>
 
-    <div class="metrics">
-      <span># accuracy: 94%</span>
-      <span># impact: 23% reduction in churn</span>
-    </div>
-  </div>
+            <div class="metrics">
+              <span># accuracy: 94%</span>
+              <span># impact: 23% reduction in churn</span>
+            </div>
+          </div>
 
-  <div class="project-card">
-    <h2>Real-Time Sentiment Analysis</h2>
-    <p>
-      Developed a streaming NLP pipeline processing 10K+ social media posts per
-      minute with sentiment classification.
-    </p>
+          <div class="project-card">
+            <h2>Real-Time Sentiment Analysis</h2>
+            <p>
+              Developed a streaming NLP pipeline processing 10K+ social media posts per
+              minute with sentiment classification.
+            </p>
 
-    <div class="tags">
-      <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
-    </div>
+            <div class="tags">
+              <span>PyTorch</span><span>Transformers</span><span>Kafka</span><span>Docker</span>
+            </div>
 
-    <div class="metrics">
-      <span># throughput: 10K posts/min</span>
-      <span># latency: &lt; 100ms</span>
-    </div>
-  </div>
+            <div class="metrics">
+              <span># throughput: 10K posts/min</span>
+              <span># latency: &lt; 100ms</span>
+            </div>
+          </div>
 
-  <div class="project-card">
-    <h2>Image Classification System</h2>
-    <p>
-      Trained a CNN model for product categorization with 98% accuracy, deployed
-      as a REST API serving 1M+ requests daily.
-    </p>
+          <div class="project-card">
+            <h2>Image Classification System</h2>
+            <p>
+              Trained a CNN model for product categorization with 98% accuracy, deployed
+              as a REST API serving 1M+ requests daily.
+            </p>
 
-    <div class="tags">
-      <span>TensorFlow</span><span>Keras</span><span>FastAPI</span><span>GCP</span>
-    </div>
+            <div class="tags">
+              <span>TensorFlow</span><span>Keras</span><span>FastAPI</span><span>GCP</span>
+            </div>
 
-    <div class="metrics">
-      <span># accuracy: 98%</span>
-      <span># requests: 1M+/day</span>
-    </div>
-  </div>
+            <div class="metrics">
+              <span># accuracy: 98%</span>
+              <span># requests: 1M+/day</span>
+            </div>
+          </div>
 
-  <div class="project-card">
-    <h2>Recommendation Engine</h2>
-    <p>
-      Implemented collaborative filtering and deep learning hybrid model,
-      increasing user engagement by 35%.
-    </p>
+          <div class="project-card">
+            <h2>Recommendation Engine</h2>
+            <p>
+              Implemented collaborative filtering and deep learning hybrid model,
+              increasing user engagement by 35%.
+            </p>
 
-    <div class="tags">
-      <span>Surprise</span><span>PyTorch</span><span>Redis</span><span>PostgreSQL</span>
-    </div>
+            <div class="tags">
+              <span>Surprise</span><span>PyTorch</span><span>Redis</span><span>PostgreSQL</span>
+            </div>
 
-    <div class="metrics">
-      <span># engagement: +35%</span>
-      <span># ctr: +28%</span>
-    </div>
-  </div>
-</section>
-
+            <div class="metrics">
+              <span># engagement: +35%</span>
+              <span># ctr: +28%</span>
+            </div>
+          </div>
+        </section>
 
         <!-- Status bar -->
         <footer class="status-bar">
           <div class="status-left">UTF-8   Python   Ln 1, Col 1</div>
-          <div class="status-right">Data Scientist Portfolio</div>
+          <div class="status-right">Sushanth's Portfolio</div>
         </footer>
       </main>
     </div>
