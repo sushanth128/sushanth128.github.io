@@ -362,9 +362,12 @@ body {
   transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
 }
 
-.btn-icon svg {
+/* Constrain any SVG or IMG inside the icon button */
+.btn-icon svg,
+.btn-icon img {
   width: 14px;
   height: 14px;
+  display: block;
   fill: #e5e7eb;
 }
 
