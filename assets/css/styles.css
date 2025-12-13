@@ -508,3 +508,14 @@ body {
   font-size: 12px;
   color: var(--text-muted);
 }
+.edu-courses {
+  margin: 10px 0 0;
+  padding-left: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.edu-courses li {
+  list-style: disc;
+}
