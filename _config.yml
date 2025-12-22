@@ -1,4 +1,5 @@
 title: Sushanth Reddy Gangireddy
 description: Portfolio
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
+logo: assets/imgs/sushanth.jpg
 markdown: kramdown
