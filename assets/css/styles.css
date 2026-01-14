@@ -547,12 +547,14 @@ a{ color: inherit; }
   border-radius: 14px;
   overflow:hidden;
 }
-.art-card .thumb {
+.art-card 
+.thumb {
   width: 100%;
-  aspect-ratio: 4 / 3; /* Or 1 / 1 for square */
-  object-fit: contain;  /* This ensures the WHOLE image is visible without cropping */
-  background-color: #1a1a1a; /* Adds a letterbox effect if the image doesn't fit the box */
-  border-radius: 8px 8px 0 0;
+  height: 250px; /* Adjust height as needed */
+  background-size: contain; /* This is the key change */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #121212; /* Matches your dark theme for the 'empty' space */
 }
 .art-card .meta{ padding: 12px; }
 .art-card .name{ font-weight: 600; color:#fff; font-size: 13.5px; }
