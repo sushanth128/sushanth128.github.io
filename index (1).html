@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Sushanth Gangireddy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#111;--ink2:#555;--ink3:#999;--ink4:#ccc;
+  --bg:#fff;--bg2:#fafaf8;
+  --red:#c0392b;
+  --rule:1px solid #e8e6e1;
+  --serif:'Lora',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --max:960px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(1.25rem,5vw,2.5rem)}
+
+/* NAV */
+header{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:var(--rule)}
+nav{display:flex;align-items:center;justify-content:space-between;height:48px}
+.logo{font-family:var(--serif);font-size:.95rem;font-weight:600;letter-spacing:-.01em}
+.nav-links{display:flex;gap:1.5rem}
+.nav-links a{font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);transition:color .15s}
+.nav-links a:hover,.nav-links a.on{color:var(--ink)}
+
+/* ABOUT */
+#about{padding:clamp(4rem,9vw,7rem) 0 clamp(3rem,6vw,5rem);border-bottom:var(--rule)}
+.hero-grid{display:grid;grid-template-columns:1fr 220px;gap:3rem;align-items:start}
+.eyebrow{font-size:.68rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--red)}
+h1{font-family:var(--serif);font-size:clamp(2.4rem,5.5vw,4rem);font-weight:600;line-height:1.05;letter-spacing:-.02em}
+h1 em{font-style:italic;color:var(--red)}
+.tagline{margin-top:1.2rem;font-size:.95rem;color:var(--ink2);max-width:460px;line-height:1.7}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.4rem}
+.chip{font-size:.65rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink4);padding:.22rem .6rem;color:var(--ink3)}
+.stats{padding-top:.25rem}
+.stat{padding:.9rem 0;border-bottom:var(--rule)}
+.stat:first-child{border-top:var(--rule)}
+.stat-n{font-family:var(--serif);font-size:1.7rem;font-weight:600;letter-spacing:-.02em;line-height:1}
+.stat-n sup{font-size:.85rem}
+.stat-d{font-size:.68rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-top:.2rem}
+
+/* SECTION BASE */
+section{padding:clamp(3rem,6vw,5rem) 0;border-bottom:var(--rule)}
+section.alt{background:var(--bg2)}
+.sec-head{margin-bottom:2rem}
+.sec-label{font-size:.65rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem}
+.sec-label::before{content:'';width:16px;height:1px;background:var(--red)}
+h2{font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,1.9rem);font-weight:600;letter-spacing:-.015em;line-height:1.1}
+
+/* PROJECTS */
+.filter{display:flex;gap:0;border:var(--rule);width:fit-content;margin-bottom:2rem}
+.f-btn{background:none;border:none;cursor:pointer;font-family:var(--sans);font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.45rem 1rem;color:var(--ink3);border-right:var(--rule);transition:background .12s,color .12s}
+.f-btn:last-child{border-right:none}
+.f-btn:hover{background:var(--bg2);color:var(--ink)}
+.f-btn.on{background:var(--ink);color:#fff}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:0;border:var(--rule)}
+.proj-card{padding:1.75rem;border-right:var(--rule);border-bottom:var(--rule);display:flex;flex-direction:column;gap:.75rem;transition:background .15s}
+.proj-card:hover{background:var(--bg2)}
+.proj-card.hidden{display:none}
+.proj-type{font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.proj-card h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;letter-spacing:-.01em;line-height:1.3}
+.proj-card p{font-size:.84rem;color:var(--ink2);line-height:1.65;flex:1}
+.proj-tags{display:flex;flex-wrap:wrap;gap:.35rem}
+.proj-tags span{font-size:.6rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--ink4);padding:.18rem .5rem;color:var(--ink3)}
+.proj-foot{display:flex;align-items:center;gap:1.25rem;padding-top:.25rem;border-top:var(--rule)}
+.proj-stat{font-size:.72rem;font-weight:500;color:var(--ink)}
+.proj-stat span{display:block;font-size:.6rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+.proj-link{margin-left:auto;font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--ink4);transition:color .12s,border-color .12s}
+.proj-link:hover{color:var(--red);border-color:var(--red)}
+
+/* EXPERIENCE */
+.xp-item{display:grid;grid-template-columns:180px 1fr;gap:0 2rem;padding:1.75rem 0;border-bottom:var(--rule)}
+.xp-item:last-child{border-bottom:none}
+.xp-co{font-size:.82rem;font-weight:500;color:var(--ink);line-height:1.3}
+.xp-dates{font-size:.68rem;font-weight:400;letter-spacing:.04em;color:var(--ink3);margin-top:.2rem}
+.xp-role{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.65rem}
+.xp-desc{font-size:.84rem;color:var(--ink2);line-height:1.65;max-width:560px}
+.xp-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.85rem}
+.xp-tag{font-size:.6rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--ink4);padding:.18rem .5rem;color:var(--ink3)}
+
+/* EDUCATION */
+.edu-item{display:grid;grid-template-columns:180px 1fr;gap:0 2rem;padding:1.75rem 0;border-bottom:var(--rule)}
+.edu-item:last-child{border-bottom:none}
+.edu-school{font-size:.82rem;font-weight:500;color:var(--ink);line-height:1.3}
+.edu-dates{font-size:.68rem;color:var(--ink3);margin-top:.2rem}
+.edu-degree{font-family:var(--serif);font-size:1rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.3rem}
+.edu-track{font-size:.84rem;color:var(--ink2)}
+.edu-badge{display:inline-block;margin-top:.5rem;font-size:.6rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--red);color:var(--red);padding:.18rem .55rem}
+.edu-courses{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.75rem}
+.edu-course{font-size:.6rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;border:1px solid var(--ink4);padding:.18rem .5rem;color:var(--ink3)}
+
+/* CREATIVE */
+.creative-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.creative-sub{font-family:var(--serif);font-size:.92rem;font-weight:600;letter-spacing:-.01em;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between}
+.toggle-btn{font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;background:none;border:1px solid var(--ink4);padding:.28rem .6rem;cursor:pointer;color:var(--ink3);transition:border-color .12s,color .12s}
+.toggle-btn:hover{border-color:var(--ink);color:var(--ink)}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.art-card.hidden{display:none}
+.art-thumb{width:100%;aspect-ratio:1;background-size:cover;background-position:center;background-color:var(--bg2)}
+.art-name{font-size:.75rem;font-weight:500;color:var(--ink);margin-top:.4rem}
+.art-sub{font-size:.65rem;color:var(--ink3)}
+.writing-list{}
+.w-item{padding:.85rem 0;border-bottom:var(--rule);display:flex;align-items:baseline;justify-content:space-between;gap:1rem}
+.w-item:first-child{border-top:var(--rule)}
+.w-org{font-size:.65rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.w-title{font-size:.88rem;font-weight:400;color:var(--ink);margin-top:.1rem}
+.w-link{font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--ink4);white-space:nowrap;flex-shrink:0;transition:color .12s,border-color .12s}
+.w-link:hover{color:var(--red);border-color:var(--red)}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.c-link{display:flex;align-items:center;gap:.85rem;padding:.9rem 0;border-bottom:var(--rule);transition:color .12s}
+.c-link:first-child{border-top:var(--rule)}
+.c-link:hover{color:var(--red)}
+.c-ico{width:32px;height:32px;border:var(--rule);display:flex;align-items:center;justify-content:center;color:var(--ink3);flex-shrink:0;transition:border-color .12s,color .12s}
+.c-link:hover .c-ico{border-color:var(--red);color:var(--red)}
+.c-ico svg{width:14px;height:14px}
+.c-lbl{font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.c-val{font-size:.84rem;font-weight:300;margin-top:.1rem}
+.cf label{display:flex;flex-direction:column;gap:.35rem;font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.7rem}
+.cf input,.cf textarea{width:100%;border:var(--rule);background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:.84rem;font-weight:300;padding:.55rem .65rem;outline:none;transition:border-color .15s}
+.cf input:focus,.cf textarea:focus{border-color:var(--ink)}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.btn-send{font-family:var(--sans);font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:#fff;border:none;padding:.6rem 1.25rem;cursor:pointer;transition:background .15s;margin-top:.35rem}
+.btn-send:hover{background:var(--red)}
+
+/* FOOTER */
+footer{padding:1.75rem 0;display:flex;justify-content:space-between;align-items:center;border-top:var(--rule)}
+.f-name{font-family:var(--serif);font-size:.88rem;font-weight:600}
+.f-note{font-size:.68rem;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+
+/* RESPONSIVE */
+@media(max-width:760px){
+  .hero-grid{grid-template-columns:1fr;gap:2rem}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);border:var(--rule)}
+  .stat{border-bottom:none;border-right:var(--rule);padding:.8rem}
+  .stat:first-child{border-top:none}
+  .stat:last-child{border-right:none}
+  .xp-item,.edu-item{grid-template-columns:1fr;gap:.65rem}
+  .creative-grid,.contact-grid{grid-template-columns:1fr;gap:2rem}
+}
+@media(max-width:480px){
+  .nav-links{display:none}
+  .art-grid{grid-template-columns:repeat(2,1fr)}
+  .cf-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo">Sushanth Gangireddy</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#creative">Creative</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Brooklyn, New York</div>
+        <h1>Senior Data<br><em>Analyst</em></h1>
+        <p class="tagline">I turn behavioral signals and transactional data into decisions that move metrics. CMU MISM, Distinction — 3+ years spanning ML engineering, retention analytics, and experimentation.</p>
+        <div class="chips">
+          <span class="chip">SQL</span><span class="chip">Python</span><span class="chip">A/B Testing</span>
+          <span class="chip">Predictive Modeling</span><span class="chip">Dashboards</span><span class="chip">Cohort Analytics</span>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-n">$1.2<sup>M</sup></div>
+          <div class="stat-d">Revenue impact</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">10M<sup>+</sup></div>
+          <div class="stat-d">Events / month</div>
+        </div>
+        <div class="stat">
+          <div class="stat-n">0.91</div>
+          <div class="stat-d">Best AUC</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Work</div>
+      <h2>Projects</h2>
+    </div>
+    <div class="filter">
+      <button class="f-btn on" data-f="all">All</button>
+      <button class="f-btn" data-f="analytics">Analytics</button>
+      <button class="f-btn" data-f="ml">ML &amp; Eng</button>
+    </div>
+    <div class="proj-grid">
+
+      <article class="proj-card" data-cat="analytics ml">
+        <div class="proj-type">Risk Analytics · CMU</div>
+        <h3>Loan Default Prediction &amp; Return Optimization</h3>
+        <p>Combined default prediction with return forecasting on LendingClub data. Ensemble + neural net models informed a decision-aware lending strategy.</p>
+        <div class="proj-tags"><span>Python</span><span>XGBoost</span><span>Risk Analytics</span></div>
+        <div class="proj-foot">
+          <div class="proj-stat"><span>AUC</span>0.91</div>
+          <div class="proj-stat"><span>Profit ↑</span>18%</div>
+          <a class="proj-link" href="https://github.com/sushanth128/loan-lending-case-study" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-cat="analytics">
+        <div class="proj-type">Data Analysis · CMU — 2nd / 40+ Teams</div>
+        <h3>Pennsylvania Election Insights</h3>
+        <p>SQL + statistical modeling over demographic datasets to surface voter turnout patterns. Interactive Tableau dashboards for non-technical stakeholders.</p>
+        <div class="proj-tags"><span>SQL</span><span>Tableau</span><span>Segmentation</span></div>
+        <div class="proj-foot">
+          <div class="proj-stat"><span>Award</span>2nd Place</div>
+          <a class="proj-link" href="#" target="_blank" rel="noreferrer">View →</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-cat="ml">
+        <div class="proj-type">MLOps · CMU</div>
+        <h3>Real-Time Traffic Forecasting Engine</h3>
+        <p>Production ML pipeline with drift monitoring and feedback loops on near real-time sensor data. Sub-5% forecast error sustained under changing conditions.</p>
+        <div class="proj-tags"><span>Python</span><span>MLflow</span><span>Docker</span></div>
+        <div class="proj-foot">
+          <div class="proj-stat"><span>MAPE</span>&lt;5%</div>
+          <a class="proj-link" href="https://github.com/sushanth128/Traffic-Prediction-System" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-cat="ml">
+        <div class="proj-type">AI Research · CMU</div>
+        <h3>LLM Inference Optimization</h3>
+        <p>Speculative decoding, pruning, and quantization for LLaMA2 and GPT-2. Benchmarked accuracy–performance tradeoffs across CPU and GPU environments.</p>
+        <div class="proj-tags"><span>PyTorch</span><span>LLMs</span><span>Quantization</span></div>
+        <div class="proj-foot">
+          <div class="proj-stat"><span>Speedup</span>1.2×</div>
+          <div class="proj-stat"><span>Retention</span>94%</div>
+          <a class="proj-link" href="https://github.com/sushanth128/LLM-Inference-Efficiency" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-cat="ml">
+        <div class="proj-type">Computer Vision · CMU × TCS</div>
+        <h3>Driver Safety — Hazard Detection</h3>
+        <p>Lightweight CV system for autonomous driving contexts. Optimized inference and cloud-edge integration for edge device deployment.</p>
+        <div class="proj-tags"><span>PyTorch</span><span>CV</span><span>Edge Deployment</span></div>
+        <div class="proj-foot">
+          <div class="proj-stat"><span>Accuracy ↑</span>18%</div>
+          <div class="proj-stat"><span>Latency ↓</span>22%</div>
+          <a class="proj-link" href="https://github.com/sushanth128/Road-Intelligence-System" target="_blank" rel="noreferrer">GitHub →</a>
+        </div>
+      </article>
+
+      <article class="proj-card" data-cat="ml">
+        <div class="proj-type">Generative AI · Personal — In Progress</div>
+        <h3>Bookwormy</h3>
+        <p>AI literacy platform for children — gamified reading with LLMs and RAG delivering safe, age-appropriate content dynamically.</p>
+        <div class="proj-tags"><span>RAG</span><span>LLMs</span><span>EdTech</span></div>
+        <div class="proj-foot">
+          <div class="proj-stat"><span>Status</span>Building</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Career</div>
+      <h2>Experience</h2>
+    </div>
+
+    <div class="xp-item">
+      <div>
+        <div class="xp-co">Bluebird Technologies</div>
+        <div class="xp-dates">Apr 2025 – Present · Brooklyn, NY</div>
+      </div>
+      <div>
+        <div class="xp-role">Senior Data Analyst — Applied ML</div>
+        <p class="xp-desc">Built SQL data foundation over 10M+ monthly merchant events, standardizing retention KPIs. Developed XGBoost retention model (AUC 0.82) improving quarterly retention 11%. Built time-series baselines reducing intervention escalations 28%.</p>
+        <div class="xp-tags"><span class="xp-tag">SQL</span><span class="xp-tag">Python</span><span class="xp-tag">XGBoost</span><span class="xp-tag">Retention Analytics</span></div>
+      </div>
+    </div>
+
+    <div class="xp-item">
+      <div>
+        <div class="xp-co">Quantiphi Inc.</div>
+        <div class="xp-dates">Feb 2021 – Jul 2023 · Mumbai</div>
+      </div>
+      <div>
+        <div class="xp-role">Machine Learning Engineer</div>
+        <p class="xp-desc">Generated $1.2M incremental revenue across 30K+ retail locations via a cohort-based SKU recommendation engine. Reduced stockout losses 9% across 50K+ stores. Led migration to Azure Databricks with Airflow + MLflow.</p>
+        <div class="xp-tags"><span class="xp-tag">PySpark</span><span class="xp-tag">Databricks</span><span class="xp-tag">Airflow</span><span class="xp-tag">MLflow</span></div>
+      </div>
+    </div>
+
+    <div class="xp-item">
+      <div>
+        <div class="xp-co">Carnegie Mellon University</div>
+        <div class="xp-dates">2024 · Pittsburgh, PA</div>
+      </div>
+      <div>
+        <div class="xp-role">Research &amp; Teaching Assistant</div>
+        <p class="xp-desc">Built regression models over 100K+ behavioral records forecasting crypto adoption, improving 3-month accuracy ~20%. TA for Applied Econometrics — causal inference and hypothesis testing in R.</p>
+        <div class="xp-tags"><span class="xp-tag">Forecasting</span><span class="xp-tag">R</span><span class="xp-tag">Causal Inference</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Academic</div>
+      <h2>Education</h2>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-school">Carnegie Mellon University</div>
+        <div class="edu-dates">2023 – 2025 · Pittsburgh</div>
+      </div>
+      <div>
+        <div class="edu-degree">M.S. Information Systems Management</div>
+        <div class="edu-track">Business Intelligence &amp; Data Analytics</div>
+        <div class="edu-badge">Distinction</div>
+        <div class="edu-courses">
+          <span class="edu-course">Machine Learning</span><span class="edu-course">A/B Testing</span>
+          <span class="edu-course">Causal Inference</span><span class="edu-course">Database Systems</span>
+          <span class="edu-course">Graduate AI</span><span class="edu-course">Unstructured Analytics</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div>
+        <div class="edu-school">Manipal Institute of Technology</div>
+        <div class="edu-dates">2017 – 2021 · Karnataka</div>
+      </div>
+      <div>
+        <div class="edu-degree">B.Tech Computer Science Engineering</div>
+        <div class="edu-track">Minor in Intelligent Systems</div>
+        <div class="edu-courses" style="margin-top:.75rem">
+          <span class="edu-course">Data Structures</span><span class="edu-course">Algorithms</span>
+          <span class="edu-course">NLP</span><span class="edu-course">Computer Vision</span>
+          <span class="edu-course">Cloud Computing</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CREATIVE -->
+<section id="creative">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Outside Work</div>
+      <h2>Creative</h2>
+    </div>
+    <div class="creative-grid">
+      <div>
+        <div class="creative-sub">
+          <span>Art</span>
+          <button class="toggle-btn" data-toggle="art">See more</button>
+        </div>
+        <div class="art-grid">
+          <div class="art-card">
+            <div class="art-thumb" style="background-image:url('assets/img/art1.jpeg')"></div>
+            <div class="art-name">Happy</div><div class="art-sub">Acrylic · 2024</div>
+          </div>
+          <div class="art-card">
+            <div class="art-thumb" style="background-image:url('assets/img/art2.jpeg')"></div>
+            <div class="art-name">Friend</div><div class="art-sub">Acrylic · 2024</div>
+          </div>
+          <div class="art-card">
+            <div class="art-thumb" style="background-image:url('assets/img/art3.jpeg')"></div>
+            <div class="art-name">Light</div><div class="art-sub">Digital · 2025</div>
+          </div>
+          <div class="art-card hidden" data-extra="art">
+            <div class="art-thumb" style="background-image:url('assets/img/art4.jpeg')"></div>
+            <div class="art-name">Beach</div><div class="art-sub">Acrylic · 2024</div>
+          </div>
+          <div class="art-card hidden" data-extra="art">
+            <div class="art-thumb" style="background-image:url('assets/img/art5.jpeg')"></div>
+            <div class="art-name">Fading</div><div class="art-sub">Pencil · 2023</div>
+          </div>
+          <div class="art-card hidden" data-extra="art">
+            <div class="art-thumb" style="background-image:url('assets/img/art6.jpeg')"></div>
+            <div class="art-name">Melting</div><div class="art-sub">Pencil · 2024</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="creative-sub"><span>Writing</span></div>
+        <div class="writing-list">
+          <div class="w-item">
+            <div><div class="w-org">Manipal The Talk Network</div><div class="w-title">Sub-Head of Writing</div></div>
+            <a class="w-link" href="#">Read</a>
+          </div>
+          <div class="w-item">
+            <div><div class="w-org">Cultural Fest '19 · MIT Manipal</div><div class="w-title">Head of Content</div></div>
+            <a class="w-link" href="#">Read</a>
+          </div>
+          <div class="w-item">
+            <div><div class="w-org">The Editorial Board · Manipal</div><div class="w-title">Writer</div></div>
+            <a class="w-link" href="#">Read</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Get in touch</div>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <a class="c-link" href="mailto:sushanth.reddyg8@gmail.com">
+          <div class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5v9A2.5 2.5 0 0 0 6.5 19h11A2.5 2.5 0 0 0 20 16.5v-9A2.5 2.5 0 0 0 17.5 5h-11A2.5 2.5 0 0 0 4 7.5Z" stroke="currentColor" stroke-width="1.5"/><path d="m6 8 6 5 6-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><div class="c-lbl">Email</div><div class="c-val">sushanth.reddyg8@gmail.com</div></div>
+        </a>
+        <a class="c-link" href="https://www.linkedin.com/in/sushanth-gangireddy/" target="_blank" rel="noreferrer">
+          <div class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M6.5 9.5V19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6.5 6.2h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10.5 19v-5.2c0-1.9 1.1-3.1 2.7-3.1 1.6 0 2.3 1.1 2.3 3.1V19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 9.5v1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div><div class="c-lbl">LinkedIn</div><div class="c-val">linkedin.com/in/sushanth-gangireddy</div></div>
+        </a>
+        <a class="c-link" href="https://github.com/sushanth128" target="_blank" rel="noreferrer">
+          <div class="c-ico"><svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-4 1.2-4-2.5-5-3m10 6v-3.1c0-.9.3-1.5.8-1.9-2.7-.3-5.6-1.3-5.6-6a4.7 4.7 0 0 1 1.2-3.2 4.4 4.4 0 0 1 .1-3.1s1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.8.2 3.1.1 3.1A4.7 4.7 0 0 1 20.8 11c0 4.7-2.9 5.7-5.6 6 .5.4.8 1.2.8 2.3V22" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div><div class="c-lbl">GitHub</div><div class="c-val">github.com/sushanth128</div></div>
+        </a>
+      </div>
+      <div>
+        <form class="cf" id="cf">
+          <div class="cf-row">
+            <label>Name<input type="text" name="name" required/></label>
+            <label>Email<input type="email" name="email" required/></label>
+          </div>
+          <label>Subject<input type="text" name="subject" required/></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn-send" type="submit">Send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span class="f-name">Sushanth Gangireddy</span>
+  <span class="f-note">Brooklyn, NY · Open to roles · 2026</span>
+</footer>
+
+<script>
+// Nav highlight on scroll
+const links=[...document.querySelectorAll('.nav-links a')];
+document.querySelectorAll('section[id]').forEach(s=>{
+  new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting)
+      links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+s.id));
+  },{threshold:.3}).observe(s);
+});
+
+// Project filter
+document.querySelectorAll('.f-btn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.f-btn').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  const f=b.dataset.f;
+  document.querySelectorAll('.proj-card').forEach(c=>{
+    c.classList.toggle('hidden',f!=='all'&&!c.dataset.cat.includes(f));
+  });
+}));
+
+// Toggle art
+document.querySelectorAll('.toggle-btn').forEach(b=>b.addEventListener('click',()=>{
+  const items=[...document.querySelectorAll(`[data-extra="${b.dataset.toggle}"]`)];
+  const nowHidden=items.some(x=>x.classList.contains('hidden'));
+  items.forEach(x=>x.classList.toggle('hidden',!nowHidden));
+  b.textContent=nowHidden?'See less':'See more';
+}));
+
+// Contact form → mailto
+document.getElementById('cf').addEventListener('submit',e=>{
+  e.preventDefault();
+  const d=new FormData(e.target);
+  window.location.href=`mailto:sushanth.reddyg8@gmail.com?subject=${encodeURIComponent(d.get('subject'))}&body=${encodeURIComponent('Name: '+d.get('name')+'\nEmail: '+d.get('email')+'\n\n'+d.get('message'))}`;
+});
+</script>
+</body>
+</html>
